@@ -1,0 +1,16 @@
+/* we use pseudo class selector ROOT 
+where we can define custom properties or global variables*/
+
+:root {
+--color-primary:#ffdd36;
+--border-size: 2 px;
+--border-radius: 10px;
+}
+
+.one {
+  background:var(--color-primary);
+}
+
+.two {
+  background: var(--color-primary);
+}

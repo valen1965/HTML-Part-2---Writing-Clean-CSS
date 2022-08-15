@@ -1,0 +1,107 @@
+/*
+
+1- Following a naming convention consistantly
+==============================================
+for instance::after
+
+nav-Bar {
+}           - this is called kebab case ( with dash )
+            we separate multiple words using hiphen
+
+navBar {
+}           - this is caled camel case 
+            first word should lower case and then first letter of every word after should be upper case.
+
+NavBar {
+}           - this is called paskual case
+              first letter of every word should be upper case.
+
+2. Create logical sections in your stylesheet.
+==============================================
+/* Basic styles */
+
+/*
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+}
+
+/* Topography */ 
+
+/*
+h1,h2,h3 {
+
+}
+
+*/
+/* Forms */
+
+/*
+different styles of input fields
+{}
+*/
+
+/* Navigation Bars */
+
+/*
+
+3. Avoid over-specific selectors ( most common problem)
+========================================================
+*/
+
+/*   div.nav ul.items li  */
+
+.item {
+  background: yellow;
+}
+
+.nav-item {
+}
+
+/*
+
+4. Avoid "!Important" keyword
+==============================
+5. Sort CSS properties
+==============================
+*/
+/*
+.nav-item {
+  background-color: #fff;
+  color: tomato;
+  font-weight: bold;
+  width: 100%;
+}
+
+/*
+
+6. Take advantage of style inheritance
+======================================
+
+*/
+
+.nav-item {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* parent class nav 
+
+.nav {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+fonts for all children will be inherited
+
+
+7. Extract repetitive patterns
+==================================
+
+8. Avoid repetitive values
+==================================
+DRY principle stands for
+
+DON'T REPEAT YOURSELF
